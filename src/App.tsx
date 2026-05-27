@@ -89,6 +89,7 @@ export default function App() {
                   <Route path="machines" element={<ProductionMachinesPage />} />
                 </Route>
                 <Route path="reports" element={<ReportsPage />} />
+                {/* com */}
               </Route>
 
               <Route element={<ProtectedRoute roles={['ADMIN']} />}>
