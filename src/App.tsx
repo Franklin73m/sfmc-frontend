@@ -67,7 +67,7 @@ export default function App() {
                 <Route path="my-invoices" element={<BillingPage />} />
               </Route>
 
-              {/* com_app.tsx */}
+              {/* com_app.tsx1 */}
 
               {/* Sections internes — interdites aux CLIENT */}
               <Route element={<ProtectedRoute roles={['ADMIN', 'OPERATOR']} />}>
