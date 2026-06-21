@@ -67,6 +67,8 @@ export default function App() {
                 <Route path="my-invoices" element={<BillingPage />} />
               </Route>
 
+              {/* com_app.tsx */}
+
               {/* Sections internes — interdites aux CLIENT */}
               <Route element={<ProtectedRoute roles={['ADMIN', 'OPERATOR']} />}>
                 <Route path="orders" element={<OrdersPage />} />
@@ -89,7 +91,6 @@ export default function App() {
                   <Route path="machines" element={<ProductionMachinesPage />} />
                 </Route>
                 <Route path="reports" element={<ReportsPage />} />
-                {/* commentaires*/}
               </Route>
 
               <Route element={<ProtectedRoute roles={['ADMIN']} />}>
